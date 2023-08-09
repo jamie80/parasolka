@@ -60,6 +60,7 @@ wrapperAbout.addEventListener("click", (e) => {
     ? "Mniej &uarr;"
     : "Więcej &darr;";
 });
+
 //BUTTON DOWN for MORE CONTENT STAFF
 //READ MORE / READ LESS button
 let more = document.querySelectorAll(".more");
@@ -69,6 +70,29 @@ for (let i = 0; i < more.length; i++) {
     more[i].parentNode.classList.toggle("active");
   });
 }
+
+//SWIPER
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 2,
+  grabCursor: "true",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    800: {
+      slidesPerView: 2,
+    },
+  },
+});
 
 //BUTTON DOWN for MORE CONTENT OFFER
 const btnMoreContentOffer = document.querySelector(".btn-more-content-offer");
@@ -90,6 +114,7 @@ wrapperOffer.addEventListener("click", (e) => {
     ? "Mniej &uarr;"
     : "Więcej &darr;";
 });
+
 //BUTTON DOWN for MORE CONTENT OFFER
 const btnMoreContentPrivacyPolicy = document.querySelector(
   ".btn-more-content-privacy-policy"
@@ -116,36 +141,7 @@ wrapperPrivacyPolicy.addEventListener("click", (e) => {
     ? "Mniej &uarr;"
     : "Więcej &darr;";
 });
-//CAROUSEL NEWS
-var swiper = new Swiper(".slide-content", {
-  slidesPerView: 2,
-  spaceBetween: 25,
-  loop: true,
-  centerSlide: "true",
-  fade: "true",
-  grabCursor: "true",
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
 
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    800: {
-      slidesPerView: 2,
-    },
-    // 1200: {
-    //   slidesPerView: 3,
-    // },
-  },
-});
 // Set current year
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();

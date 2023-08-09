@@ -1,21 +1,18 @@
+<!DOCTYPE html>
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
-    <title>Parasolka | Żłobek | Przedszkole</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
+    <title>Parasolka | Żłobek | Przedszkole</title>
   </head>
   <body>
     <nav class="navbar">
@@ -125,52 +122,47 @@
       </div>
     </section>
 
+    <!-- Swiper -->
     <section id="news" class="container">
       <h2>Wydarzenia</h2>
-      <div class="slide-container swiper">
-        <div class="slide-content">
-          <div class="card-wrapper swiper-wrapper">
-            <div class="card swiper-slide">
-              <a
-                href="./img/news/high_resolution/01_zapoznanie_sie_z_instrumentem_flet_1080.jpg"
-                target="_blank"
-                ><img
-                  src="./img/news/01_zapoznanie_sie_z_instrumentem_flet_600.jpg"
-                  alt="Zapoznanie się z instrumentem flet"
-              /></a>
-            </div>
-            <div class="card swiper-slide">
-              <img
-                src="./img/news/02_wystawa_obrazow_grupa-gwiazd_600.jpg"
-                alt="Wystawa obrazów grupy gwiazd"
-              />
-            </div>
-            <div class="card swiper-slide">
-              <img
-                src="./img/news/03_kiermasz_kaziukowy_600.jpg"
-                alt="Kiermasz Kaziukowy"
-              />
-            </div>
-            <div class="card swiper-slide">
-              <img
-                src="./img/news/04-jestesmy-samodzielni-w-kuchin-600.jpg"
-                alt="Jesteśmy samodzielni w kuchni"
-              />
-            </div>
-            <div class="card swiper-slide">
-              <img
-                src="./img/news/05-MySieDeszczuNieBoimy-600.jpg"
-                alt="My się deszczu nie boimy!"
-              />
-            </div>
-            <div class="card swiper-slide">
-              <img src="./img/news/06-TeatrLalek-600.jpg" alt="Teatr Lalek" />
-            </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="./img/news/01_zapoznanie_sie_z_instrumentem_flet_600.jpg"
+              alt="Zapoznanie się z instrumentem flet"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./img/news/02_wystawa_obrazow_grupa-gwiazd_600.jpg"
+              alt="Wystawa obrazów grupy gwiazd"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./img/news/03_kiermasz_kaziukowy_600.jpg"
+              alt="Kiermasz Kaziukowy"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./img/news/04-jestesmy-samodzielni-w-kuchin-600.jpg"
+              alt="Jesteśmy samodzielni w kuchni"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./img/news/05-MySieDeszczuNieBoimy-600.jpg"
+              alt="My się deszczu nie boimy!"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/news/06-TeatrLalek-600.jpg" alt="Teatr Lalek" />
           </div>
         </div>
-
-        <div class="swiper-button-next swiper-navBtn"></div>
-        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
       </div>
     </section>
