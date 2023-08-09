@@ -310,11 +310,6 @@ span.bold {
     width: 150px;
   }
 }
-@media screen and (max-width: 400px) {
-  .about-wrapper img {
-    width: 100px;
-  }
-}
 .about-read-more {
   display: block;
   opacity: 0;
@@ -518,11 +513,6 @@ span.bold {
 @media screen and (max-width: 600px) {
   .offer-wrapper img {
     width: 150px;
-  }
-}
-@media screen and (max-width: 400px) {
-  .offer-wrapper img {
-    width: 100px;
   }
 }
 .offer-read-more {
