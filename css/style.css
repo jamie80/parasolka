@@ -121,7 +121,7 @@ span.bold {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 75%;
+  height: 100%;
 }
 .index-card {
   display: flex;
@@ -570,7 +570,7 @@ span.bold {
 .offer-read-more-open {
   display: block;
   opacity: 1;
-  height: 30rem;
+  height: 35rem;
   visibility: visible;
 }
 @media screen and (max-width: 970px) {
@@ -849,6 +849,17 @@ span.bold {
   width: 150px;
   justify-self: center;
   /* padding: 10px; */
+}
+.footer-logo2 {
+  width: 250px;
+  margin-bottom: 10px;
+  justify-self: center;
+  /* padding: 10px; */
+}
+@media screen and (max-width: 610px) {
+  .footer-logo2 {
+    width: 150px;
+  }
 }
 .fa-solid {
   margin-right: 10px;

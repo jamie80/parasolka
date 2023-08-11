@@ -115,7 +115,7 @@ wrapperOffer.addEventListener("click", (e) => {
     : "Więcej &darr;";
 });
 
-//BUTTON DOWN for MORE CONTENT OFFER
+//BUTTON DOWN for MORE CONTENT PRIVACY-POLICY
 const btnMoreContentPrivacyPolicy = document.querySelector(
   ".btn-more-content-privacy-policy"
 );
