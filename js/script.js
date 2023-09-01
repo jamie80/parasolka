@@ -94,26 +94,59 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-//BUTTON DOWN for MORE CONTENT OFFER
+//BUTTON DOWN for MORE CONTENT OFFER in ZLOBEK
 const btnMoreContentOffer = document.querySelector(".btn-more-content-offer");
 const textReadMoreOffer = document.querySelector(".offer-read-more");
 const wrapperOffer = document.querySelector(".offer-wrapper");
 
-wrapperOffer.addEventListener("click", (e) => {
-  const current = e.target;
+if (wrapperOffer) {
+  wrapperOffer.addEventListener("click", (e) => {
+    const current = e.target;
 
-  const isBtnMoreContentOffer = current.className.includes(
-    "btn-more-content-offer"
-  );
+    const isBtnMoreContentOffer = current.className.includes(
+      "btn-more-content-offer"
+    );
 
-  if (!isBtnMoreContentOffer) return;
+    if (!isBtnMoreContentOffer) return;
 
-  const currentText = e.target.parentNode.querySelector(".offer-read-more");
-  currentText.classList.toggle("offer-read-more-open");
-  current.innerHTML = current.innerHTML.includes("Więcej")
-    ? "Mniej &uarr;"
-    : "Więcej &darr;";
-});
+    const currentText = e.target.parentNode.querySelector(".offer-read-more");
+    currentText.classList.toggle("offer-read-more-open");
+    current.innerHTML = current.innerHTML.includes("Więcej")
+      ? "Mniej &uarr;"
+      : "Więcej &darr;";
+  });
+}
+
+//BUTTON DOWN for MORE CONTENT OFFER in PRZEDSZKOLE
+const btnMoreContentOfferPrzedszkole = document.querySelector(
+  ".btn-more-content-offer-przedszkole"
+);
+const textReadMoreOfferPrzedszkole = document.querySelector(
+  ".offer-read-more-przedszkole"
+);
+const wrapperOfferPrzedszkole = document.querySelector(
+  ".offer-wrapper-przedszkole"
+);
+
+if (wrapperOfferPrzedszkole) {
+  wrapperOfferPrzedszkole.addEventListener("click", (e) => {
+    const current = e.target;
+
+    const isBtnMoreContentOffer = current.className.includes(
+      "btn-more-content-offer-przedszkole"
+    );
+
+    if (!isBtnMoreContentOffer) return;
+
+    const currentText = e.target.parentNode.querySelector(
+      ".offer-read-more-przedszkole"
+    );
+    currentText.classList.toggle("offer-read-more-open-przedszkole");
+    current.innerHTML = current.innerHTML.includes("Więcej")
+      ? "Mniej &uarr;"
+      : "Więcej &darr;";
+  });
+}
 
 //BUTTON DOWN for MORE CONTENT PRIVACY-POLICY
 const btnMoreContentPrivacyPolicy = document.querySelector(
