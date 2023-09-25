@@ -259,8 +259,8 @@ span.bold {
   width: 0%;
   height: 0%;
   transform: translateY(-50%);
-  /* background: #16c2f4; */
-  background: linear-gradient(rgb(22, 194, 244), rgb(11, 96, 122));
+  background: #fff;
+  /* background: linear-gradient(rgb(22, 194, 244), rgb(11, 96, 122)); */
   overflow: hidden;
   z-index: 200;
 }
@@ -308,9 +308,9 @@ span.bold {
     width: 0%;
     height: 0%;
   }
-  50% {
+  25% {
     width: 100%;
-    height: 8px;
+    height: 1px;
   }
   100% {
     width: 100%;
