@@ -120,36 +120,17 @@ span.bold {
   transform: translateY(-3px);
 }
 
-/* popupAd */
-/* .popup-ad {
-  background-color: #fff;
-  max-width: 450px;
-  padding: 30px 40px;
+/* ADVERT */
+.advert {
+  padding: 24px 48px;
   position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  border-radius: 8px;
+  top: 24px;
 }
-.popup-ad h4 {
-  text-transform: uppercase;
-  text-align: center;
+@media screen and (max-width: 700px) {
+  .advert {
+    position: relative;
+  }
 }
-.popup-ad p {
-  font-size: 16px;
-  text-align: justify;
-  margin: 20px 0;
-}
-.popup-ad button {
-  display: block;
-  margin: 0 0 20px auto;
-  background-color: transparent;
-  font-size: 30px;
-  color: #888;
-  border: none;
-  outline: none;
-  cursor: pointer;
-} */
 
 /* ............/index.html/............ */
 .index-container {
