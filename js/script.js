@@ -28,11 +28,11 @@ $(document).ready(function () {
 });
 
 /* popupAd */
-window.addEventListener("load", function () {
-  setTimeout(function open(event) {
-    document.querySelector(".popup-ad").style.display = "block";
-  }, 1000);
-});
+// window.addEventListener("load", function () {
+//   setTimeout(function open(event) {
+//     document.querySelector(".popup-ad").style.display = "block";
+//   }, 1000);
+// });
 
 document.querySelector("#close-ad").addEventListener("click", function () {
   document.querySelector(".popup-ad").style.display = "none";
