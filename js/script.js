@@ -34,9 +34,9 @@ $(document).ready(function () {
 //   }, 1000);
 // });
 
-document.querySelector("#close-ad").addEventListener("click", function () {
-  document.querySelector(".popup-ad").style.display = "none";
-});
+// document.querySelector("#close-ad").addEventListener("click", function () {
+//   document.querySelector(".popup-ad").style.display = "none";
+// });
 
 //POPUP
 document
