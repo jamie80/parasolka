@@ -601,6 +601,16 @@ span.bold {
   width: 100%;
   margin-bottom: 50px;
 }
+
+/* ......../ projekt-iwona /.......... */
+.container.center {
+  display: flex;
+  justify-content: center;
+}
+.projekt-iwona {
+  width: 75%;
+  margin-bottom: 25px;
+}
 /* ......../ footer /.......... */
 #contact {
   padding: 50px 0 25px 0;
