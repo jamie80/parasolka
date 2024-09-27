@@ -238,6 +238,19 @@ span.bold {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.polecana_placowka {
+  position: absolute;
+  top: 10%;
+  right: 1%;
+}
+@media screen and (max-width: 770px) {
+  .polecana_placowka {
+    width: 125px;
+    top: 13%;
+  }
 }
 
 .showcase-container {
