@@ -509,6 +509,22 @@ span.bold {
   border-bottom: #000 solid 1px;
   padding-top: 1rem;
 }
+/* ........./ For parents /.......... */
+#forParents {
+  padding: 50px 0;
+  background: #eaf3f8;
+  min-height: 500px;
+}
+#forParents h2 {
+  padding-top: 30px;
+}
+#forParents h3 {
+  font-size: 1.2rem;
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: #000 solid 1px;
+  padding-top: 1rem;
+}
 
 /* ........./ Other /.......... */
 #other {
