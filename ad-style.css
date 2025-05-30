@@ -14,7 +14,7 @@
 .ad-popup-content {
   width: 50vw;
   background-color: #fff;
-  padding: 1rem;
+  padding: 2rem;
   box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
   border-radius: 0.5em;
   opacity: 0;
@@ -23,6 +23,8 @@
 }
 
 .ad-popup h1 {
+  padding: 1rem;
+  color: #666;
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;

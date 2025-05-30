@@ -595,7 +595,9 @@ span.bold {
   text-transform: uppercase;
   letter-spacing: 1.5;
 }
-
+.block-element {
+  display: block;
+}
 /* ////privacy policy/// */
 .privacy-policy-title {
   text-align: center;
