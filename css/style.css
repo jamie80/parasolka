@@ -233,7 +233,8 @@ span.bold {
 
 .showcase-area {
   height: 50vh;
-  background: linear-gradient(rgba(22, 194, 244, 0.8), rgba(11, 96, 122, 0.8)),
+  background:
+    linear-gradient(rgba(22, 194, 244, 0.8), rgba(11, 96, 122, 0.8)),
     url("../img/hero_1280.jpg");
   background-size: cover;
   background-position: center;
@@ -889,5 +890,69 @@ span.bold {
     .showcase-area {
       height: 50vmax;
     }
+  }
+}
+/*FACEBOOK*/
+.facebook-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  z-index: 1000;
+}
+
+.facebook-link {
+  display: flex;
+  align-items: center;
+  background: #1877f2;
+  color: white;
+  height: 60px;
+  border-radius: 30px 0 0 30px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+/* Ikona */
+.facebook-link i {
+  width: 60px;
+  text-align: center;
+  font-size: 26px;
+}
+
+/* Tekst */
+.facebook-text {
+  white-space: nowrap;
+  max-width: 0;
+  overflow: hidden;
+  transition: max-width 0.4s ease;
+  font-size: 16px;
+}
+
+/* Efekt po najechaniu
+.facebook-link:hover .facebook-text {
+  max-width: 220px;
+  padding-right: 20px;
+} */
+
+@media (hover: hover) {
+  .facebook-link:hover .facebook-text {
+    max-width: 220px;
+    padding-right: 20px;
+  }
+}
+
+/* Mniejsze urządzenia */
+@media (max-width: 600px) {
+  .facebook-link {
+    height: 50px;
+  }
+
+  .facebook-link i {
+    width: 50px;
+    font-size: 22px;
+  }
+
+  .facebook-text {
+    font-size: 14px;
   }
 }
