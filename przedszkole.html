@@ -13,7 +13,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css?v=2" />
+    <link rel="stylesheet" href="./css/style.css?v=3" />
     <link rel="shortcut icon" type="image/png" href="./img/logo/favicon.png" />
     <title>Parasolka | Żłobek | Przedszkole</title>
   </head>
@@ -620,6 +620,33 @@
             >
           </li>
         </ul>
+        <h3>Filmy:</h3>
+
+        <div class="video-grid">
+          <div class="video-item" onclick="openVideo('SLjJyQR2Xas')">
+            <div class="video-thumbnail">
+              <img
+                src="https://img.youtube.com/vi/SLjJyQR2Xas/maxresdefault.jpg"
+              />
+              <div class="play-button"></div>
+            </div>
+            <div class="video-title">Witamy w przedszkolu "Parasolka"</div>
+          </div>
+        </div>
+
+        <div id="videoPopup" class="video-popup">
+          <div class="video-popup-content">
+            <span class="close-video" onclick="closeVideo()">×</span>
+            <iframe
+              id="youtubeVideo"
+              src=""
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
         <h3>Wspieramy:</h3>
         <div class="gallery">
           <figure class="gallery-item">

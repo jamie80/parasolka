@@ -537,6 +537,33 @@
     <section id="other">
       <div class="container">
         <h2>Inne</h2>
+        <h3>Filmy:</h3>
+
+        <div class="video-grid">
+          <div class="video-item" onclick="openVideo('yNj1yt4OgQw')">
+            <div class="video-thumbnail">
+              <img
+                src="https://img.youtube.com/vi/yNj1yt4OgQw/maxresdefault.jpg"
+              />
+              <div class="play-button"></div>
+            </div>
+            <div class="video-title">Witamy w żłobku "Parasolka"</div>
+          </div>
+        </div>
+
+        <div id="videoPopup" class="video-popup">
+          <div class="video-popup-content">
+            <span class="close-video" onclick="closeVideo()">×</span>
+            <iframe
+              id="youtubeVideo"
+              src=""
+              frameborder="0"
+              allow="autoplay; encrypted-media"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
 
         <h3>Wspieramy:</h3>
         <div class="gallery">

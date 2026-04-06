@@ -21,7 +21,7 @@ $(document).ready(function () {
         function () {
           // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
-        }
+        },
       );
     } // End if
   });
@@ -49,7 +49,7 @@ wrapperAbout.addEventListener("click", (e) => {
   const current = e.target;
 
   const isBtnMoreContentAbout = current.className.includes(
-    "btn-more-content-about"
+    "btn-more-content-about",
   );
 
   if (!isBtnMoreContentAbout) return;
@@ -104,7 +104,7 @@ if (wrapperOffer) {
     const current = e.target;
 
     const isBtnMoreContentOffer = current.className.includes(
-      "btn-more-content-offer"
+      "btn-more-content-offer",
     );
 
     if (!isBtnMoreContentOffer) return;
@@ -119,13 +119,13 @@ if (wrapperOffer) {
 
 //BUTTON DOWN for MORE CONTENT OFFER in PRZEDSZKOLE
 const btnMoreContentOfferPrzedszkole = document.querySelector(
-  ".btn-more-content-offer-przedszkole"
+  ".btn-more-content-offer-przedszkole",
 );
 const textReadMoreOfferPrzedszkole = document.querySelector(
-  ".offer-read-more-przedszkole"
+  ".offer-read-more-przedszkole",
 );
 const wrapperOfferPrzedszkole = document.querySelector(
-  ".offer-wrapper-przedszkole"
+  ".offer-wrapper-przedszkole",
 );
 
 if (wrapperOfferPrzedszkole) {
@@ -133,13 +133,13 @@ if (wrapperOfferPrzedszkole) {
     const current = e.target;
 
     const isBtnMoreContentOffer = current.className.includes(
-      "btn-more-content-offer-przedszkole"
+      "btn-more-content-offer-przedszkole",
     );
 
     if (!isBtnMoreContentOffer) return;
 
     const currentText = e.target.parentNode.querySelector(
-      ".offer-read-more-przedszkole"
+      ".offer-read-more-przedszkole",
     );
     currentText.classList.toggle("offer-read-more-open-przedszkole");
     current.innerHTML = current.innerHTML.includes("Więcej")
@@ -150,10 +150,10 @@ if (wrapperOfferPrzedszkole) {
 
 //BUTTON DOWN for MORE CONTENT PRIVACY-POLICY
 const btnMoreContentPrivacyPolicy = document.querySelector(
-  ".btn-more-content-privacy-policy"
+  ".btn-more-content-privacy-policy",
 );
 const textReadMorePrivacyPolicy = document.querySelector(
-  ".privacy-policy-read-more"
+  ".privacy-policy-read-more",
 );
 const wrapperPrivacyPolicy = document.querySelector(".privacy-policy-text");
 
@@ -161,13 +161,13 @@ wrapperPrivacyPolicy.addEventListener("click", (e) => {
   const current = e.target;
 
   const isBtnMoreContentPrivacyPolicy = current.className.includes(
-    "btn-more-content-privacy-policy"
+    "btn-more-content-privacy-policy",
   );
 
   if (!isBtnMoreContentPrivacyPolicy) return;
 
   const currentText = e.target.parentNode.querySelector(
-    ".privacy-policy-read-more"
+    ".privacy-policy-read-more",
   );
   currentText.classList.toggle("privacy-policy-read-more-open");
   current.innerHTML = current.innerHTML.includes("Więcej")
@@ -179,3 +179,22 @@ wrapperPrivacyPolicy.addEventListener("click", (e) => {
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
+
+/* * * F I L M S * * */
+function openVideo(videoId) {
+  document.getElementById("videoPopup").style.display = "flex";
+  document.getElementById("youtubeVideo").src =
+    "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
+}
+
+function closeVideo() {
+  document.getElementById("videoPopup").style.display = "none";
+  document.getElementById("youtubeVideo").src = "";
+}
+
+window.onclick = function (e) {
+  let popup = document.getElementById("videoPopup");
+  if (e.target == popup) {
+    closeVideo();
+  }
+};
