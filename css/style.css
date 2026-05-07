@@ -521,15 +521,15 @@ span.bold {
   padding-top: 1rem;
 }
 /* ........./ For parents /.......... */
-#forParents {
+#projects {
   padding: 50px 0;
   background: #eaf3f8;
   min-height: 500px;
 }
-#forParents h2 {
+#projects h2 {
   padding-top: 30px;
 }
-#forParents h3 {
+#projects h3 {
   font-size: 1.2rem;
   display: inline-block;
   text-transform: uppercase;
@@ -545,7 +545,8 @@ span.bold {
 #other h2 {
   padding-top: 30px;
 }
-#other h3 {
+#other h3,
+#projects h3 {
   font-size: 1.2rem;
   display: inline-block;
   text-transform: uppercase;
